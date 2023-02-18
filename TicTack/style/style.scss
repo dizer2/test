@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family:'Itim', cursive;
+}
+body{
+	background-color: #12181B;
+}
+.background{
+	height: 100vh;
+	padding-top: 1px;
+	.titel{
+		color: #fff;
+		text-align: center;
+		font-size: 40px;
+		margin-top: 6%;
+
+	}
+	.display{
+		color: #fff;
+		font-size: 25px;
+		text-align: center;
+		margin-top: 1em;
+		margin-bottom: 1em;
+		.playerX{
+			color: #09C372;
+		}
+		.playerO{
+			color: #498AFB;
+		}
+	}
+	.hide{
+		display: none;
+		position: relative;
+	}
+	.container{
+		margin: 0 auto;
+ 	    display: grid;
+		grid-template-columns: 33% 33% 33%;
+		grid-template-rows: 33% 33% 33%;
+   	    max-width: 300px;
+		   .playerX{
+			color: #09C372;
+		}
+		.playerO{
+			color: #498AFB;
+		}
+		.tile{
+			border: 1px solid white;
+			min-width: 100px;
+			min-height: 100px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 50px;
+			cursor: pointer;
+		}
+	}
+	.controls{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		margin-top: 1em;
+		#reset{
+			background-color: #FF3860;
+			color: #fff;
+			padding: 8px;
+			border-radius: 8px;
+			border: none;
+			font-size: 20px;
+			cursor: pointer;
+		}
+	}
+
+}
+
+
+
+
+
+
