@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<title>Js animation</title>
+	<style>
+		.center {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	background: linear-gradient(45deg, rgb(5, 0, 37), rgb(0, 0, 0));
+
+}
+.wave {
+  width: 5px;
+  height: 100px;
+  background: linear-gradient(45deg, cyan, #fff);
+  margin: 10px;
+  animation: wave 1s linear infinite;
+  border-radius: 20px;
+}
+.wave:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.wave:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.wave:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.wave:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.wave:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.wave:nth-child(7) {
+  animation-delay: 0.6s;
+}
+.wave:nth-child(8) {
+  animation-delay: 0.7s;
+}
+.wave:nth-child(9) {
+  animation-delay: 0.8s;
+}
+.wave:nth-child(10) {
+  animation-delay: 0.9s;
+}
+
+@keyframes wave {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+		.loading{
+	width: 100%;
+	height: 100vh;
+	background-color: #6f2323;
+
+}
+
+.loading__animation{
+	display: none;
+}
+
+	</style>
+</head>
+<body id="body">
+	<div class="burger__menu" id="burger__menu">
+		<div class="burger__content" id="burger__content">
+			<div class="burger__left">
+				<p class="butger__menu">MENU</p>
+				
+			</div>
+			<div class="burher__right">
+				<div class="text__box__burger text__butrrrr" id="text__box__burger">
+					<div class="box__left">
+						<p class="fitst__number">00</p>
+						<img class="kvadr" src="./img/kvadr.png" alt="kvadr" id="kvadr">
+					</div>
+					<div class="box__right" >
+						<div class="line__burger2" id="line__burger2"></div>
+						<p class="main__text__burger">Home</p>
+					</div>
+				</div>
+				
+				<div class="text__box__burger text__butrrrr2" id="text__box__burger2">
+					<div class="box__left">
+						<p class="fitst__number">01</p>
+						<img class="kvadr" src="./img/kvadr.png" alt="kvadr" id="kvadr2">
+					</div>
+					<div class="box__right" >
+						<div class="line__burger2" id="line__burger3"></div>
+						<p class="main__text__burger">About</p>
+					</div>
+				</div>
+
+				<div class="text__box__burger text__butrrrr3" id="text__box__burger3">
+					<div class="box__left">
+						<p class="fitst__number">02</p>
+						<img class="kvadr" src="./img/kvadr.png" alt="kvadr" id="kvadr3">
+					</div>
+					<div class="box__right" >
+						<div class="line__burger2" id="line__burger4"></div>
+						<p class="main__text__burger">Studio</p>
+					</div>
+				</div>
+
+				<div class="text__box__burger text__butrrrr4" id="text__box__burger4">
+					<div class="box__left">
+						<p class="fitst__number">03</p>
+						<img class="kvadr" src="./img/kvadr.png" alt="kvadr" id="kvadr4">
+					</div>
+					<div class="box__right" >
+						<div class="line__burger2" id="line__burger5"></div>
+						<p class="main__text__burger">Product</p>
+					</div>
+				</div>
+
+
+			</div>
+
+		</div>
+	</div>
+
+	<div class="wrap" id="wrap">
+		<div class="paje1">
+		<div class="header">
+			<p class="logo">Creator</p>
+			<div class="burger" id="burger">
+			<div class="burger__row burger__row1" id="burger__row1"></div>
+			<div class="burger__row burger__row2" id="burger__row2"></div>
+			<div class="burger__row burger__row3" id="burger__row3"></div>
+
+			</div>
+		</div>
+
+
+		<div class="main">
+			<div class="box"></div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, recusandae! Amet, culpa similique dolorum neque in architecto esse quia consequatur aspernatur laborum eius ipsam dicta corrupti et rerum doloribus! Et, odit. Quos, voluptatibus minima quo sapiente vero debitis error quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, magni laboriosam autem, sit neque repudiandae excepturi nam expedita beatae similique quidem aut temporibus nisi consectetur aperiam vero accusamus sapiente doloribus dignissimos, commodi magnam dicta officia. Ipsam obcaecati sit nobis fuga. Sunt, nemo! Natus dignissimos exercitationem eligendi quasi suscipit. Eveniet culpa molestias est sunt debitis vel fugiat possimus. Modi, eligendi. Magni tempora odio omnis reprehenderit rem, voluptatibus nesciunt numquam quia, architecto laboriosam unde. Molestiae mollitia voluptatem consequuntur voluptate magni voluptatum eveniet laboriosam, odit culpa sit reprehenderit nemo, repellendus fuga, qui ipsam placeat distinctio est aut id. Corrupti beatae ipsum modi sed.</p>
+		</div>
+		</div>
+		<div class="paje2">
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae illo dolorum hic? Vel aperiam dicta cum reprehenderit similique. Consequatur error facere iusto. Tenetur quia beatae porro! Laudantium error, cupiditate provident at veniam voluptatem, maiores cumque voluptatum soluta, reiciendis est architecto quam! Dolores ipsa quos labore repudiandae corrupti modi nihil deleniti, illo aut dicta odio recusandae, voluptas harum blanditiis voluptates quis.</p>
+		</div>
+
+	</div>
+	<div class="loading" id="loading">
+		<div class="center">
+			<div class="wave"></div>
+			<div class="wave"></div>
+			<div class="wave"></div>
+			<div class="wave"></div>
+			<div class="wave"></div>
+			<div class="wave"></div>
+			<div class="wave"></div>
+			<div class="wave"></div>
+			<div class="wave"></div>
+			<div class="wave"></div>
+		</div>
+	</div>
+
+
+
+
+
+	<script src="./main.js"></script>
+	
+</body>
+</html>

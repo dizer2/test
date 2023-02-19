@@ -1,0 +1,1006 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+::-webkit-scrollbar {
+  width: 0px; }
+
+.body__animation {
+  overflow: hidden; }
+
+.wrap {
+  width: 100%;
+  min-height: 100vh;
+  font-family: monospace;
+  color: #ffff;
+  display: flex;
+  flex-direction: column;
+  display: none; }
+  .wrap .paje1 {
+    width: 100%;
+    height: 150vh; }
+    .wrap .paje1 .header {
+      width: 100%;
+      height: 10vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-left: 3%;
+      padding-right: 3%;
+      position: fixed;
+      z-index: 999; }
+      .wrap .paje1 .header .logo {
+        font-size: 24px;
+        font-family: 600;
+        position: relative;
+        top: 6px;
+        z-index: 55; }
+      .wrap .paje1 .header .burger {
+        width: 26px;
+        height: 17px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+        cursor: pointer;
+        z-index: 999; }
+        .wrap .paje1 .header .burger .burger__row {
+          width: 26px;
+          height: 1px;
+          background-color: #ffff; }
+        .wrap .paje1 .header .burger .burger__row1 {
+          position: relative; }
+        .wrap .paje1 .header .burger .burger__row2 {
+          position: relative; }
+        .wrap .paje1 .header .burger .burger__row3 {
+          width: 18px;
+          position: relative; }
+    .wrap .paje1 .main {
+      width: 100%;
+      height: 150vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 200px;
+      background-color: #6f2323; }
+      .wrap .paje1 .main .box {
+        width: 60%;
+        height: 5%;
+        background-color: black;
+        margin-bottom: 10%; }
+      .wrap .paje1 .main p {
+        text-align: center; }
+  .wrap .paje2 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #121212;
+    color: #fff;
+    padding: 30px; }
+    .wrap .paje2 p {
+      text-align: center; }
+
+.burger__row1__animation {
+  animation-name: burgerrow1;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+  z-index: 9999;
+  opacity: 0; }
+
+.burger__row2__animation {
+  animation-name: burgerrow2;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  z-index: 9999;
+  rotate: 45deg;
+  position: relative;
+  top: 3.5px; }
+
+.burger__row3__animation {
+  animation-name: burgerrow3;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  z-index: 9999;
+  rotate: -45deg;
+  position: relative;
+  bottom: 3.5px; }
+
+.burger__row2__animation__close {
+  animation-name: burgerrow2__close;
+  animation-duration: 1.3s;
+  animation-iteration-count: 1;
+  z-index: 9999;
+  rotate: 0deg;
+  position: relative;
+  top: 0px; }
+
+.burger__row3__animation__close {
+  animation-name: burgerrow3__close;
+  animation-duration: 1.3s;
+  animation-iteration-count: 1;
+  z-index: 9999;
+  rotate: 0deg;
+  position: relative;
+  bottom: 0px; }
+
+@keyframes burgerrow3__close {
+  0% {
+    rotate: -45deg;
+    position: relative;
+    bottom: 3.5px; }
+  60% {
+    rotate: 10deg; }
+  100% {
+    rotate: 0deg;
+    position: relative;
+    bottom: 0px; } }
+@keyframes burgerrow2__close {
+  0% {
+    rotate: 45deg;
+    position: relative;
+    top: 3.5px; }
+  60% {
+    rotate: -10deg; }
+  100% {
+    rotate: 0deg;
+    position: relative;
+    top: 0px; } }
+.burger__row1__animation__close {
+  animation-name: burgerrow1__close;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  z-index: 9999;
+  opacity: 1; }
+
+@keyframes burgerrow1__close {
+  0% {
+    width: 1440px;
+    position: relative;
+    top: 1000px;
+    display: none;
+    opacity: 0; }
+  10% {
+    position: relative;
+    top: 0px;
+    opacity: 1; }
+  20% {
+    position: relative;
+    top: 0px;
+    opacity: 1; }
+  30% {
+    position: relative;
+    top: 0px;
+    opacity: 1; }
+  40% {
+    position: relative;
+    top: 0px; }
+  50% {
+    position: relative;
+    top: 0px;
+    opacity: 1; }
+  60% {
+    position: relative;
+    top: 0px;
+    opacity: 1; }
+  70% {
+    position: relative;
+    top: 0px;
+    opacity: 1; }
+  80% {
+    position: relative;
+    top: 0px; }
+  100% {
+    width: 18px;
+    position: relative;
+    top: 0px;
+    opacity: 1; } }
+@keyframes burgerrow2 {
+  0% {
+    rotate: 0deg;
+    position: relative;
+    top: 0px; }
+  20% {
+    rotate: -10deg; }
+  100% {
+    rotate: 45deg;
+    position: relative;
+    top: 3.5px; } }
+@keyframes burgerrow3 {
+  0% {
+    rotate: 0deg;
+    position: relative;
+    bottom: 0px; }
+  20% {
+    rotate: 10deg; }
+  100% {
+    rotate: -45deg;
+    position: relative;
+    bottom: 3.5px; } }
+@keyframes burgerrow1 {
+  0% {
+    width: 18px;
+    position: relative;
+    top: 0px;
+    opacity: 1; }
+  10% {
+    position: relative;
+    top: 0px;
+    opacity: 1; }
+  20% {
+    position: relative;
+    top: 0px;
+    opacity: 1; }
+  30% {
+    position: relative;
+    top: 0px;
+    opacity: 1; }
+  40% {
+    position: relative;
+    top: 0px; }
+  50% {
+    position: relative;
+    top: 0px;
+    opacity: 1; }
+  60% {
+    position: relative;
+    top: 0px;
+    opacity: 1; }
+  70% {
+    position: relative;
+    top: 0px;
+    opacity: 1; }
+  80% {
+    position: relative;
+    top: 0px; }
+  100% {
+    width: 1440px;
+    position: relative;
+    top: 1000px;
+    display: none;
+    opacity: 0; } }
+.burger__menu {
+  width: 100%;
+  height: 100vh;
+  background-color: #121212;
+  position: absolute;
+  left: 0%;
+  top: 1%;
+  z-index: 1;
+  position: fixed;
+  display: none; }
+
+.burger__content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  display: none;
+  opacity: 0; }
+  .burger__content .burger__left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 2%; }
+    .burger__content .burger__left .butger__menu {
+      font-size: 260px;
+      font-family: 'Poppins', sans-serif;
+      color: #000;
+      font-weight: 700;
+      cursor: pointer;
+      animation-name: butger__menu;
+      animation-duration: 2s;
+      animation-iteration-count: 1; }
+  .burger__content .burher__right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 8%; }
+    .burger__content .burher__right .text__box__burger {
+      width: 50%;
+      height: 7%;
+      display: flex;
+      margin: 2%; }
+      .burger__content .burher__right .text__box__burger .box__left {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center; }
+        .burger__content .burher__right .text__box__burger .box__left .fitst__number {
+          font-size: 11px;
+          font-family: 'Poppins', sans-serif;
+          color: #fff;
+          font-weight: 600;
+          rotate: 270deg; }
+      .burger__content .burher__right .text__box__burger .box__right {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-right: 26%; }
+        .burger__content .burher__right .text__box__burger .box__right .line__burger2 {
+          background-color: #fff;
+          position: absolute;
+          margin-right: 6%; }
+        .burger__content .burher__right .text__box__burger .box__right #line__burger3 {
+          margin-right: 6.2%; }
+        .burger__content .burher__right .text__box__burger .box__right #line__burger4 {
+          margin-right: 6.4%; }
+        .burger__content .burher__right .text__box__burger .box__right #line__burger5 {
+          margin-right: 8%; }
+        .burger__content .burher__right .text__box__burger .box__right .main__text__burger {
+          font-size: 34px;
+          font-family: 'Poppins', sans-serif;
+          color: #fff;
+          font-weight: 500;
+          cursor: pointer; }
+
+#text__box__burger4 {
+  animation-name: text__box__burger4;
+  animation-duration: 2.3s;
+  animation-iteration-count: 1; }
+
+#text__box__burger3 {
+  animation-name: text__box__burger3;
+  animation-duration: 2.8s;
+  animation-iteration-count: 1; }
+
+#text__box__burger2 {
+  animation-name: text__box__burger2;
+  animation-duration: 3.3s;
+  animation-iteration-count: 1; }
+
+#text__box__burger {
+  animation-name: text__box__burger;
+  animation-duration: 3.8s;
+  animation-iteration-count: 1; }
+
+@keyframes text__box__burger {
+  0% {
+    position: relative;
+    top: 30%;
+    opacity: 0; }
+  20% {
+    opacity: 0; }
+  40% {
+    opacity: 0; }
+  100% {
+    position: relative;
+    top: 0%;
+    opacity: 1; } }
+@keyframes text__box__burger2 {
+  0% {
+    position: relative;
+    top: 30%;
+    opacity: 0; }
+  20% {
+    opacity: 0; }
+  40% {
+    opacity: 0; }
+  100% {
+    position: relative;
+    top: 0%;
+    opacity: 1; } }
+@keyframes text__box__burger3 {
+  0% {
+    position: relative;
+    top: 30%;
+    opacity: 0; }
+  20% {
+    opacity: 0; }
+  40% {
+    opacity: 0; }
+  100% {
+    position: relative;
+    top: 0%;
+    opacity: 1; } }
+@keyframes text__box__burger4 {
+  0% {
+    position: relative;
+    top: 30%;
+    opacity: 0; }
+  20% {
+    opacity: 0; }
+  40% {
+    opacity: 0; }
+  100% {
+    position: relative;
+    top: 0%;
+    opacity: 1; } }
+@keyframes butger__menu {
+  0% {
+    position: relative;
+    right: 40%;
+    opacity: 0; }
+  20% {
+    opacity: 0; }
+  40% {
+    opacity: 0; }
+  100% {
+    position: relative;
+    right: 0%;
+    opacity: 1; } }
+.kvadr {
+  width: 6%;
+  height: 14%;
+  margin-left: 2%;
+  opacity: 0; }
+
+.kvadr__animation {
+  width: 6%;
+  height: 14%;
+  margin-left: 2%;
+  transform: scale(1);
+  animation-name: kvadr__animation;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+  opacity: 1; }
+
+@keyframes kvadr__animation {
+  0% {
+    transform: scale(0);
+    opacity: 0; }
+  100% {
+    transform: scale(1);
+    opacity: 1; } }
+.line__burger__hover3 {
+  width: 6.3%;
+  height: 1px;
+  animation-name: line__burger__hover3;
+  animation-duration: 0.4s;
+  animation-iteration-count: 1; }
+
+@keyframes line__burger__hover3 {
+  0% {
+    width: 0%;
+    height: 0.5px; }
+  100% {
+    width: 6.3%;
+    height: 1px; } }
+.line__burger__hover2 {
+  width: 8%;
+  height: 1px;
+  animation-name: line__burger__hover2;
+  animation-duration: 0.4s;
+  animation-iteration-count: 1; }
+
+.line__burger__hover__close3 {
+  width: 0%;
+  height: 0.5px;
+  animation-name: line__burger__hover__close3;
+  animation-duration: 0.4s;
+  animation-iteration-count: 1; }
+
+@keyframes line__burger__hover__close3 {
+  0% {
+    width: 6.3%;
+    height: 1px; }
+  100% {
+    width: 0%;
+    height: 0.5px; } }
+@keyframes line__burger__hover2 {
+  0% {
+    width: 0%;
+    height: 0.5px; }
+  100% {
+    width: 8%;
+    height: 1px; } }
+.line__burger__hover {
+  width: 8.2%;
+  height: 1px;
+  animation-name: line__burger__hover;
+  animation-duration: 0.4s;
+  animation-iteration-count: 1; }
+
+@keyframes line__burger__hover {
+  0% {
+    width: 0%;
+    height: 0.5px; }
+  100% {
+    width: 8.2%;
+    height: 1px; } }
+.line__burger__hover__close {
+  width: 0%;
+  height: 0.5px;
+  animation-name: line__burger__hover__close;
+  animation-duration: 0.4s;
+  animation-iteration-count: 1; }
+
+@keyframes line__burger__hover__close {
+  0% {
+    width: 8.2%;
+    height: 1px; }
+  100% {
+    width: 0%;
+    height: 0.5px; } }
+.burger__conrant__animation {
+  display: flex;
+  opacity: 1;
+  animation-name: burger__conrant__animation;
+  animation-duration: 1s;
+  animation-iteration-count: 1; }
+
+@keyframes burger__conrant__animation {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+.burger__menu__animation {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  animation-name: burger__menu__animation;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.burger__menu__animation__close {
+  width: 100%;
+  height: 0vh;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  animation-name: burger__menu__animation__close;
+  animation-duration: 6s;
+  animation-iteration-count: 1;
+  position: fixed;
+  display: flex; }
+
+@keyframes burger__menu__animation__close {
+  0% {
+    height: 100vh; }
+  10% {
+    height: 0vh; }
+  20% {
+    height: 0vh; }
+  30% {
+    height: 0vh; }
+  40% {
+    height: 0vh; }
+  100% {
+    height: 0vh; } }
+@keyframes burger__menu__animation {
+  0% {
+    height: 0vh; }
+  10% {
+    height: 0vh; }
+  20% {
+    height: 0vh; }
+  30% {
+    height: 0vh; }
+  40% {
+    height: 0vh; }
+  100% {
+    height: 100vh; } }
+@media screen and (max-width: 1513px) {
+  .burger__content {
+    width: 100%; }
+    .burger__content .burger__left {
+      width: 50%; }
+      .burger__content .burger__left .butger__menu {
+        font-size: 260px; }
+    .burger__content .burher__right {
+      width: 50%; }
+      .burger__content .burher__right .text__box__burger {
+        width: 50%; }
+        .burger__content .burher__right .text__box__burger .box__left {
+          width: 50%; }
+          .burger__content .burher__right .text__box__burger .box__left .fitst__number {
+            font-size: 11px; }
+        .burger__content .burher__right .text__box__burger .box__right {
+          width: 50%; }
+          .burger__content .burher__right .text__box__burger .box__right .line__burger2 {
+            background-color: #fff; }
+          .burger__content .burher__right .text__box__burger .box__right #line__burger3 {
+            margin-right: 6.4%; }
+          .burger__content .burher__right .text__box__burger .box__right #line__burger4 {
+            margin-right: 6.6%; }
+          .burger__content .burher__right .text__box__burger .box__right #line__burger5 {
+            margin-right: 8.2%; }
+          .burger__content .burher__right .text__box__burger .box__right .main__text__burger {
+            cursor: pointer; }
+
+  .line__burger__hover3 {
+    width: 6.1%;
+    height: 1px;
+    animation-name: line__burger__hover3;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1; }
+
+  @keyframes line__burger__hover3 {
+    0% {
+      width: 0%;
+      height: 0.5px; }
+    100% {
+      width: 6.1%;
+      height: 1px; } }
+  .line__burger__hover2 {
+    width: 7.8%;
+    height: 1px;
+    animation-name: line__burger__hover2;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1; }
+
+  @keyframes line__burger__hover2 {
+    0% {
+      width: 0%;
+      height: 0.5px; }
+    100% {
+      width: 7.8%;
+      height: 1px; } }
+  .line__burger__hover {
+    width: 8%;
+    height: 1px;
+    animation-name: line__burger__hover;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1; }
+
+  @keyframes line__burger__hover {
+    0% {
+      width: 0%;
+      height: 0.5px; }
+    100% {
+      width: 8%;
+      height: 1px; } }
+  .line__burger__hover__close {
+    width: 0%;
+    height: 0.5px;
+    animation-name: line__burger__hover__close;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1; }
+
+  @keyframes line__burger__hover__close {
+    0% {
+      width: 8.2%;
+      height: 1px; }
+    100% {
+      width: 0%;
+      height: 0.5px; } } }
+@media screen and (max-width: 1430px) {
+  .burger__content {
+    width: 100%; }
+    .burger__content .burger__left {
+      width: 50%; }
+      .burger__content .burger__left .butger__menu {
+        font-size: 260px; }
+    .burger__content .burher__right {
+      width: 50%; }
+      .burger__content .burher__right .text__box__burger {
+        width: 50%; }
+        .burger__content .burher__right .text__box__burger .box__left {
+          width: 50%; }
+          .burger__content .burher__right .text__box__burger .box__left .fitst__number {
+            font-size: 11px; }
+        .burger__content .burher__right .text__box__burger .box__right {
+          width: 50%; }
+          .burger__content .burher__right .text__box__burger .box__right .line__burger2 {
+            background-color: #fff; }
+          .burger__content .burher__right .text__box__burger .box__right #line__burger3 {
+            margin-right: 6.6%; }
+          .burger__content .burher__right .text__box__burger .box__right #line__burger4 {
+            margin-right: 6.8%; }
+          .burger__content .burher__right .text__box__burger .box__right #line__burger5 {
+            margin-right: 8.4%; }
+          .burger__content .burher__right .text__box__burger .box__right .main__text__burger {
+            cursor: pointer; }
+
+  .line__burger__hover3 {
+    width: 6.1%;
+    height: 1px;
+    animation-name: line__burger__hover3;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1; }
+
+  @keyframes line__burger__hover3 {
+    0% {
+      width: 0%;
+      height: 0.5px; }
+    100% {
+      width: 6.1%;
+      height: 1px; } }
+  .line__burger__hover2 {
+    width: 7.8%;
+    height: 1px;
+    animation-name: line__burger__hover2;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1; }
+
+  @keyframes line__burger__hover2 {
+    0% {
+      width: 0%;
+      height: 0.5px; }
+    100% {
+      width: 7.8%;
+      height: 1px; } }
+  .line__burger__hover {
+    width: 8%;
+    height: 1px;
+    animation-name: line__burger__hover;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1; }
+
+  @keyframes line__burger__hover {
+    0% {
+      width: 0%;
+      height: 0.5px; }
+    100% {
+      width: 8%;
+      height: 1px; } }
+  .line__burger__hover__close {
+    width: 0%;
+    height: 0.5px;
+    animation-name: line__burger__hover__close;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1; }
+
+  @keyframes line__burger__hover__close {
+    0% {
+      width: 8.2%;
+      height: 1px; }
+    100% {
+      width: 0%;
+      height: 0.5px; } } }
+.wrap__animation {
+  display: flex;
+  flex-direction: column; }
+
+@media screen and (max-width: 1370px) {
+  .burger__content {
+    width: 100%; }
+    .burger__content .burger__left {
+      width: 50%; }
+      .burger__content .burger__left .butger__menu {
+        font-size: 220px; }
+    .burger__content .burher__right {
+      width: 50%; }
+      .burger__content .burher__right .text__box__burger {
+        width: 50%; }
+        .burger__content .burher__right .text__box__burger .box__left {
+          width: 50%; }
+          .burger__content .burher__right .text__box__burger .box__left .fitst__number {
+            font-size: 11px; }
+        .burger__content .burher__right .text__box__burger .box__right {
+          width: 50%; }
+          .burger__content .burher__right .text__box__burger .box__right .line__burger2 {
+            background-color: #fff; }
+          .burger__content .burher__right .text__box__burger .box__right #line__burger2 {
+            margin-right: 6.8%; }
+          .burger__content .burher__right .text__box__burger .box__right #line__burger3 {
+            margin-right: 7%; }
+          .burger__content .burher__right .text__box__burger .box__right #line__burger4 {
+            margin-right: 7%; }
+          .burger__content .burher__right .text__box__burger .box__right #line__burger5 {
+            margin-right: 8.6%; }
+          .burger__content .burher__right .text__box__burger .box__right .main__text__burger {
+            cursor: pointer; }
+
+  .line__burger__hover3 {
+    width: 5.5%;
+    height: 1px;
+    animation-name: line__burger__hover3;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1; }
+
+  @keyframes line__burger__hover3 {
+    0% {
+      width: 0%;
+      height: 0.5px; }
+    100% {
+      width: 5.5%;
+      height: 1px; } }
+  .line__burger__hover2 {
+    width: 7.3%;
+    height: 1px;
+    animation-name: line__burger__hover2;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1; }
+
+  @keyframes line__burger__hover2 {
+    0% {
+      width: 0%;
+      height: 0.5px; }
+    100% {
+      width: 7.3%;
+      height: 1px; } }
+  .line__burger__hover {
+    width: 7.5%;
+    height: 1px;
+    animation-name: line__burger__hover;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1; }
+
+  @keyframes line__burger__hover {
+    0% {
+      width: 0%;
+      height: 0.5px; }
+    100% {
+      width: 7.5%;
+      height: 1px; } }
+  .line__burger__hover__close {
+    width: 0%;
+    height: 0.5px;
+    animation-name: line__burger__hover__close;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1; }
+
+  @keyframes line__burger__hover__close {
+    0% {
+      width: 8.2%;
+      height: 1px; }
+    100% {
+      width: 0%;
+      height: 0.5px; } } }
+@media screen and (max-width: 1210px) {
+  .burger__content {
+    width: 100%; }
+    .burger__content .burger__left {
+      width: 50%; }
+      .burger__content .burger__left .butger__menu {
+        font-size: 200px; }
+    .burger__content .burher__right {
+      width: 50%; }
+      .burger__content .burher__right .text__box__burger {
+        width: 50%; }
+        .burger__content .burher__right .text__box__burger .box__left {
+          width: 50%; }
+          .burger__content .burher__right .text__box__burger .box__left .fitst__number {
+            font-size: 11px; }
+        .burger__content .burher__right .text__box__burger .box__right {
+          width: 50%; }
+          .burger__content .burher__right .text__box__burger .box__right .line__burger2 {
+            background-color: #fff; }
+          .burger__content .burher__right .text__box__burger .box__right #line__burger2 {
+            margin-right: 6.7%; }
+          .burger__content .burher__right .text__box__burger .box__right #line__burger3 {
+            margin-right: 7.8%; }
+          .burger__content .burher__right .text__box__burger .box__right #line__burger4 {
+            margin-right: 7.8%; }
+          .burger__content .burher__right .text__box__burger .box__right #line__burger5 {
+            margin-right: 10.6%; }
+          .burger__content .burher__right .text__box__burger .box__right .main__text__burger {
+            cursor: pointer; }
+
+  .line__burger__hover3 {
+    width: 3.4%;
+    height: 1px;
+    animation-name: line__burger__hover3;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1; }
+
+  @keyframes line__burger__hover3 {
+    0% {
+      width: 0%;
+      height: 0.5px; }
+    100% {
+      width: 3.4%;
+      height: 1px; } }
+  .line__burger__hover2 {
+    width: 6.2%;
+    height: 1px;
+    animation-name: line__burger__hover2;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1; }
+
+  @keyframes line__burger__hover2 {
+    0% {
+      width: 0%;
+      height: 0.5px; }
+    100% {
+      width: 6.2%;
+      height: 1px; } }
+  .line__burger__hover {
+    width: 7.2%;
+    height: 1px;
+    animation-name: line__burger__hover;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1; }
+
+  @keyframes line__burger__hover {
+    0% {
+      width: 0%;
+      height: 0.5px; }
+    100% {
+      width: 7.2%;
+      height: 1px; } } }
+@media screen and (max-width: 1200px) {
+  #kvadr {
+    display: none; }
+
+  #kvadr2 {
+    display: none; }
+
+  #kvadr3 {
+    display: none; }
+
+  #kvadr4 {
+    display: none; }
+
+  .line__burger2 {
+    display: none; }
+
+  .burger__content .burger__left {
+    display: none; }
+
+  .burger__content .burher__right {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0%; }
+
+  .burger__content .burher__right .text__box__burger {
+    width: 30%;
+    height: 5%;
+    display: flex;
+    margin: 2%;
+    position: relative;
+    left: 3%; } }
+@media screen and (max-width: 890px) {
+  .burger__content .burher__right .text__box__burger {
+    width: 40%;
+    height: 5%;
+    display: flex;
+    margin: 2%;
+    position: relative;
+    left: 4%; } }
+@media screen and (max-width: 780px) {
+  .burger__content .burher__right .text__box__burger {
+    width: 40%;
+    height: 5%;
+    display: flex;
+    margin: 2%;
+    position: relative;
+    left: 6%; }
+
+  .burger__content .burher__right .text__box__burger .box__right .main__text__burger {
+    font-size: 26px; } }
+@media screen and (max-width: 580px) {
+  .burger__content .burher__right .text__box__burger {
+    width: 50%;
+    height: 5%;
+    display: flex;
+    margin: 2%;
+    position: relative;
+    left: 6%; }
+
+  .burger__content .burher__right .text__box__burger .box__right .main__text__burger {
+    font-size: 26px; }
+
+  .wrap .paje1 .main p {
+    font-size: 10px; }
+
+  .wrap .paje1 .main {
+    padding: 30px; } }
+@media screen and (max-width: 400px) {
+  .burger__content .burher__right .text__box__burger {
+    width: 60%;
+    height: 5%;
+    display: flex;
+    margin: 3%;
+    position: relative;
+    left: 6%; }
+
+  .burger__content .burher__right .text__box__burger .box__right .main__text__burger {
+    font-size: 26px; }
+
+  .wrap .paje1 .main p {
+    font-size: 10px; }
+
+  .wrap .paje1 .main {
+    padding: 30px; } }
+
+/*# sourceMappingURL=style.css.map */
