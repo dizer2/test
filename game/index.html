@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Том і джері</title>
+	<style>
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+  overflow: hidden;
+}
+.wrap{
+width: 100%;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+background-image: url(./img/ss_1280x720-min.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+.button{
+  position:relative;
+  display:inline-block;
+  margin:20px;
+}
+
+.button a{
+  color:white;
+  font-family:Helvetica, sans-serif;
+  font-weight:bold;
+  font-size:36px;
+  text-align: center;
+  text-decoration:none;
+  background-color:#FFA12B;
+  display:block;
+  position:relative;
+  padding:20px 40px;
+  
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-shadow: 0px 1px 0px #000;
+  filter: dropshadow(color=#000, offx=0px, offy=1px);
+  
+  -webkit-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+  -moz-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+  box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+  
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.button a:active{
+  top:10px;
+  background-color:#F78900;
+  -webkit-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+  -moz-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3pxpx 0 #915100;
+  box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+}
+
+.button:after{
+  content:"";
+  height:100%;
+  width:100%;
+  padding:4px;
+  position: absolute;
+  bottom:-15px;
+  left:-4px;
+  z-index:-1;
+  background-color:#2B1800;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.button__box{
+    width: 100%;
+    height: 100%;
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.sir{
+  width: 40px;
+  height: 40px;
+z-index: 888;
+
+}
+.sir11{
+  animation-name: sir;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            position: absolute;
+    left: -20%;
+    top: -20%;
+    
+}
+.sir2{
+  animation-name: sir2;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            position: absolute;
+    left:80%;
+    top: -30%;
+}
+.sir3{
+  animation-name: sir3;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            position: absolute;
+    left: -30%;
+    top: -30%;
+}
+.sir5{
+  animation-name: sir5;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            position: absolute;
+    left: 65%;
+    top: 120%;
+}
+
+
+@keyframes sir5 {
+  0%{
+    position: absolute;
+    left: 65%;
+    top: 120%;
+    rotate: 20deg;
+  }
+  100%{
+    position: absolute;
+    left: -20%;
+    top: -20%;
+    rotate: 360deg;
+
+  }
+}
+@keyframes sir3 {
+  0%{
+    position: absolute;
+    left: -30%;
+    top: -30%;
+    rotate: 20deg;
+  }
+  100%{
+    position: absolute;
+    left: -120%;
+    top: 120%;
+    rotate: 360deg;
+
+  }
+}
+
+@keyframes sir2 {
+  0%{
+    position: absolute;
+    left:80%;
+    top: -30%;
+    rotate: 20deg;
+  }
+  100%{
+    position: absolute;
+    left: 85%;
+    top: 120%;
+    rotate: 360deg;
+
+  }
+}
+
+@keyframes sir {
+  0%{
+    position: absolute;
+    left: -20%;
+    top: -20%;
+    rotate: 20deg;
+  }
+  100%{
+    position: absolute;
+    left: 120%;
+    top: 120%;
+    rotate: 360deg;
+
+  }
+}
+
+
+.animation__button{
+  animation-name: button;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+}
+
+@keyframes button {
+  0%{
+    position: relative;
+    left: 5%;
+    box-shadow: 0 20px 20px #333;
+  }
+  50%{
+    position: relative;
+    left: 0%;
+    box-shadow: 0 0px 0px #333;
+
+  }
+  100%{
+    position: relative;
+    left: 5%;
+    box-shadow: 0 20px 20px #333;
+
+  }
+}
+
+
+	</style>
+</head>
+<body>
+
+
+
+
+<div class="wrap">
+<div class="button__box">
+  <img class="sir sir11" src="./img/ir.png" alt="sir">
+  <img class=" sir sir2" src="./img/ir.png" alt="sir">
+  <img class="sir sir3" src="./img/ir.png" alt="sir">
+  <img class="sir sir5" src="./img/ir.png" alt="sir">
+    <div ontouchstart="">
+        <div class="button animation__button">
+          <a href="./menu.html">Play</a>
+        </div>
+      </div>
+   
+   
+</div>
+
+
+</div>
+
+
+
+
+</body>
+</html>
