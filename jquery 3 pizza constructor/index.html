@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<link rel="icon" href="./img/favicon-32x32.png">
+	<title>Pizza constructor</title>
+</head>
+<body>
+	
+ <div class="wrap">
+	<div class="navbarContainer">
+		<div class="navbarheader">Pizza constructor</div>
+
+		<div class="ingradientContainer">
+			<div class="category cheese" id="cheese">Cheese</div>
+			<div class="categoryInner" id="cheeseOpen">
+				<div class="row">
+					<div class="ingradient" id="feta__ingradient">
+						<div class="pic feta" id="feta"></div>
+						<div>Feta</div>
+					</div>
+					<div class="ingradient" id="blue__ingredient">
+						<div class="pic blue" id="blue"></div>
+						<div>Berghader</div>
+					</div>
+					<div class="ingradient" id="parm__ingredient">
+						<div class="pic parm" id="parm"></div>
+						<div>Parmesan</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="ingradient" id="cheddar__ingredient">
+						<div class="pic cheddar" id="cheddar"></div>
+						<div>Cheddar</div>
+					</div>
+					<div class="ingradient" id="mozzarela__ingredient">
+						<div class="pic mozzarela" id="mozzarela"></div>
+						<div>Mozzarella</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="category cheese" id="meat">Meat</div>
+			<div class="categoryInner" id="meat2">
+				<div class="row">
+					<div class="ingradient" id="cheken__ingredient">
+						<div class="pic cheken" id="cheken"></div>
+						<div>Chicken</div>
+					</div>
+					<div class="ingradient" id="bacon__ingredient">
+						<div class="pic bacon" id="bacon"></div>
+						<div>Bacon</div>
+					</div>
+					<div class="ingradient" id="shunka__ingredient">
+						<div class="pic shunka" id="shunka"></div>
+						<div>Ham</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="ingradient" id="paperoni__ingredient">
+						<div class="pic paperoni" id="paperoni"></div>
+						<div>Pepperoni</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="category cheese" id="sous">Sauces</div>
+			<div class="categoryInner" id="sous2">
+				<div class="row">
+					<div class="ingradient" id="alfredo__ingredient">
+						<div class="pic alfredo" id="alfredo"></div>
+						<div>Alfredo</div>
+					</div>
+					<div class="ingradient" id="barbequ__ingredient">
+						<div class="pic barbequ" id="barbequ"></div>
+						<div>Barbecue</div>
+					</div>
+					<div class="ingradient" id="chasnikovy__ingredient">
+						<div class="pic chasnikovy" id="chasnikovy"></div>
+						<div>Garlicky</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="category cheese" id="vegetable">Vegetables</div>
+			<div class="categoryInner" id="vegetable2">
+				<div class="row">
+					<div class="ingradient" id="kukurudza__ingredient">
+						<div class="pic kukurudza" id="kukurudza"></div>
+						<div>Corn</div>
+					</div>
+					<div class="ingradient" id="ananas__ingredient">
+						<div class="pic ananas" id="ananas"></div>
+						<div>Pineapple</div>
+					</div>
+					<div class="ingradient" id="tomato__ingredient">
+						<div class="pic tomato" id="tomato"></div>
+						<div>Tomatoes</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="ingradient" id="mushrooms__ingredient">
+						<div class="pic mushrooms" id="mushrooms"></div>
+						<div>Mushrooms</div>
+					</div>
+					<div class="ingradient" id="shpunat__ingredient">
+						<div class="pic shpunat" id="shpunat"></div>
+						<div>Spinach</div>
+					</div>
+					<div class="ingradient" id="pepper__ingredient">
+						<div class="pic pepper" id="pepper"></div>
+						<div>Pepper</div>
+					</div>
+				</div>
+
+			</div>
+
+
+			<div class="category cheese" id="vegetable__new">Additional vegetables</div>
+			<div class="categoryInner" id="vegetable__new2">
+
+
+			</div>
+
+
+
+
+
+
+		</div>
+	</div>
+
+	<div class="pizzaContainer">
+		<div class="pizza" id="pizza">
+			<div class="rowBig">
+				<div class="pic2 feta2" id="feta2"></div>
+				<div class="pic2 cheddar2" id="cheddar2"></div>
+				<div class="pic2 mozzarela2" id="mozzarela2"></div>
+				<div class="pic2 cheken2" id="cheken2"></div>
+				<div class="pic2 blue2" id="blue2"></div>
+				<div class="pic2 parm2" id="parm2"></div>
+				<div class="pic2 shunka2" id="shunka2"></div>
+				<div class="pic2 paperoni2" id="paperoni2"></div>
+				<div class="pic2 bacon2" id="bacon2"></div>
+				<div class="pic2 alfredo2" id="alfredo2"></div>
+				<div class="pic2 barbequ2" id="barbequ2"></div>
+				<div class="pic2 chasnikovy2" id="chasnikovy2"></div>
+				<div class="pic2 kukurudza2" id="kukurudza2"></div>
+				<div class="pic2 ananas2" id="ananas2"></div>
+				<div class="pic2 tomato2" id="tomato2"></div>
+				<div class="pic2 pepper2" id="pepper2"></div>
+				<div class="pic2 shpunat2" id="shpunat2"></div>
+				<div class="pic2 mushrooms2" id="mushrooms2"></div>
+
+			</div>
+
+		</div>
+	</div>
+
+	<div class="orderContainer"></div>
+	<div class="buuton__container">
+		<button class="button__pizaa" id="button__pizaa"><p>Pay: <span id="prise">0</span></p></button>
+	</div>
+ </div>
+
+
+
+
+
+
+
+
+
+	<script src="./javs.js"></script>
+</body>
+</html>

@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.wrap{
+	width: 100%;
+	height: 100vh;
+	background-color: #333;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	font-family: 'Poppins', sans-serif;
+}
+
+.navbarContainer{
+	width: 15%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 50px;
+	padding-left: 50px;
+
+}
+
+.navbarheader{
+	width: 200px;
+	height: 40px;
+	background-color: rgb(255, 145, 0);
+	color: #fff;
+	border-radius: 10px;
+	cursor: pointer;
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.ingradientContainer{
+	display: flex;
+	flex-direction: column;
+	width: 200px;
+	align-items: center;
+	margin-top: 15%;
+	
+
+}
+
+.category{
+	border-bottom: 2px dotted  rgb(255, 145, 0);
+	width: 100%;
+	padding: 10px;
+	color: #fff;
+	cursor: pointer;
+
+}
+
+.categoryInner{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	color: #fff;
+	padding: 10px 0;
+
+
+
+}
+
+.row{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+
+}
+
+
+.ingradient{
+	font-size: calc(5px + 0.5vw);
+	margin: 0 10px;
+
+}
+
+.pic{
+	width: 50px;
+	height: 50px;
+	box-shadow: 0 2px 3px #9999;
+	border-radius: 5px;
+	background-size: cover;
+
+}
+
+.feta{
+	background-image: url(./img/feta.png);
+}
+
+.blue{
+	background-image: url(./img/blu.png);
+}
+
+.parm{
+	background-image: url(./img/parmezan.png);
+}
+
+.cheddar{
+	background-image: url(./img/cheder.png);
+}
+
+.mozzarela{
+	background-image: url(./img/motza.png);
+}
+
+.cheken{
+	background-image: url(./img/chicken.png);
+}
+
+.bacon{
+	background-image: url(./img/bekon.png);
+}
+
+.shunka{
+	background-image: url(./img/shunka.png);
+}
+
+.paperoni{
+	background-image: url(./img/paparoni.png);
+}
+
+.alfredo{
+	background-image: url(./img/alfredo.png);
+}
+
+.barbequ{
+	background-image: url(./img/barbequ.png);
+}
+
+.chasnikovy{
+	background-image: url(./img/chasnyk.png);
+}
+
+
+.kukurudza{
+	background-image: url(./img/kukurudza.png);
+}
+
+
+.ananas{
+	background-image: url(./img/ananas.png);
+}
+
+
+.tomato{
+	background-image: url(./img/tomato.png);
+}
+
+.mushrooms{
+	background-image: url(./img/grub.png);
+}
+
+.shpunat{
+	background-image: url(./img/shpunat.png);
+}
+
+.pepper{
+	background-image: url(./img/perets.png);
+}
+
+
+
+
+.ingradient div:last-child{
+	margin-top: 10px;
+	margin-bottom: 5px;
+
+}
+
+
+
+.pizzaContainer{
+	width: 65%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	padding-top: 50px;
+}
+.pizza{
+	width: 450px;
+	height: 450px;
+	background-image: url(./img/bace.png);
+	background-size: cover;
+	background-color: transparent;
+	border-radius: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.rowBig{
+	width: 100%;
+	height: 50%;
+	flex-wrap: wrap;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+.pic2{
+	width: 50px;
+	height: 50px;
+	border-radius: 5px;
+	background-size: cover;
+	margin: 2%;
+	border: 1px solid #9999;
+}
+
+.feta2{
+	background-image: url(./img/feta.png);
+}
+
+.blue2{
+	background-image: url(./img/blu.png);
+}
+
+.parm2{
+	background-image: url(./img/parmezan.png);
+}
+
+.cheddar2{
+	background-image: url(./img/cheder.png);
+}
+
+.mozzarela2{
+	background-image: url(./img/motza.png);
+}
+
+.cheken2{
+	background-image: url(./img/chicken.png);
+}
+
+.bacon2{
+	background-image: url(./img/bekon.png);
+}
+
+.shunka2{
+	background-image: url(./img/shunka.png);
+}
+
+.paperoni2{
+	background-image: url(./img/paparoni.png);
+}
+
+.alfredo2{
+	background-image: url(./img/alfredo.png);
+}
+
+.barbequ2{
+	background-image: url(./img/barbequ.png);
+}
+
+.chasnikovy2{
+	background-image: url(./img/chasnyk.png);
+}
+
+
+.kukurudza2{
+	background-image: url(./img/kukurudza.png);
+}
+
+
+.ananas2{
+	background-image: url(./img/ananas.png);
+}
+
+
+.tomato2{
+	background-image: url(./img/tomato.png);
+}
+
+.mushrooms2{
+	background-image: url(./img/grub.png);
+}
+
+.shpunat2{
+	background-image: url(./img/shpunat.png);
+}
+
+.pepper2{
+	background-image: url(./img/perets.png);
+}
+
+
+
+.buuton__container{
+	width: 20%;
+	height: 100%;
+	padding-top: 50px;
+
+}
+
+.button__pizaa{
+	width: 150px;
+	height: 40px;
+	border-radius: 10px;
+	border: none;
+	background-color: rgb(28, 216, 66);
+	font-size: 14px;
+	color: #fff;
+	
+	
+}
+
+
+
+
+.buuton__anomation{
+	animation-name: buuton__anomation;
+	animation-duration: 0.2s;
+	animation-iteration-count: infinite;
+
+}
+
+::-webkit-scrollbar {
+    width: 10px; 
+	height: 10px;
+}
+  
+  ::-webkit-scrollbar-thumb {
+	width: 10px;
+	height: 20px;
+	background-size: contain;
+    background-image: url(./img/scroll-bar.svg);
+    border-radius: 0px 0px 0px 0px;
+    -webkit-border-radius: 0px 0px 0px 0px;
+    -moz-border-radius: 0px 0px 0px 0px;
+    -ms-border-radius: 0px 0px 0px 0px;
+    -o-border-radius: 0px 0px 0px 0px; }
+  
+
+
+
+@keyframes buuton__anomation {
+	0%{
+		position: relative;
+		top: 5px;
+	}
+	100%{
+		position: relative;
+		top: -5px;
+	}
+
+}
+
+
+
+@media screen and (max-width: 1200px) {
+	.wrap{
+		padding-left: 2%;
+	}
+}
+
+@media screen and (max-width: 1140px) {
+	body{
+		min-height: 160vh;
+		background-color: #333;
+		padding-bottom: 100px;
+	}
+	.wrap{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		height: auto;
+	}
+    .navbarContainer{
+		width: 100%;
+		height: auto;
+		padding-top: 50px;
+
+	}
+	.ingradientContainer{
+		margin-top: 5%;
+	}
+	.pizzaContainer{
+		width: 100%;
+		height: auto;
+	}
+	.category{
+		display: flex;
+		justify-content: center;
+	}
+	.buuton__container{
+		width: 100%;
+		height: auto;
+		display: flex;
+		justify-content: center;
+		padding-top: 80px;
+	}
+
+}
+
+
+
+
+@media screen and (max-width: 700px) {
+	body{
+		height: auto;
+		padding-bottom: 0px;
+	}
+	.pizza{
+		width: 350px;
+		height: 350px;
+	}
+	.pic2{
+		width: 40px;
+		height: 40px;
+		border-radius: 5px;
+		margin: 2%;
+	}
+	
+.navbarContainer{
+	padding-left: 0px;
+
+}
+	
+
+}
+@media screen and (max-width: 400px) {
+	.pizza{
+		width: 330px;
+		height: 330px;
+	}
+	.pic2{
+		width: 38px;
+		height: 38px;
+		border-radius: 5px;
+		margin: 2%;
+	}
+	
+
+}
