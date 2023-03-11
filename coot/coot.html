@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="icon" href="img/apple.png">
+    <title>Cootles</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+.wrap{
+    width: 100%;
+    height: 100vh;
+    /* background-color: aquamarine; */
+}
+.head{
+    width: 100%;
+    height: 25vh;
+    /* background-color: beige; */
+    display: flex;
+  -items: center;
+
+}
+.logoname{
+    width: 20%;
+    height: 100% ;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 60px;
+    padding-left: 110px;
+   
+}
+.bodyname{
+    width: 60%;
+    height: 100% ;
+    /* background-color: rgb(255, 208, 0); */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 75px;
+}
+.btnname{
+    width: 20%;
+    height: 100% ;
+    /* background-color: rgb(10, 255, 1); */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 60px;
+    padding-right: 110px;
+}
+.coot{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 38px;
+    font-weight: 700 ;
+}
+.bodyn{
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 500;
+    margin-left: 40px;
+    color: #000;
+}
+.bodyn:hover{
+    border-bottom: 2px solid  #777676  ;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.started{
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 700;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    color: white;
+    background-color: #000;
+    cursor: pointer;
+}
+.started:hover{
+    background-color: white;
+    color: black;
+   
+}
+.bodywrap{
+    width: 100%;
+    height: 80vh;
+    /* background-color: blueviolet; */
+    display: flex;
+}
+
+
+.leftbodywrap{
+    width: 50%;
+    height: 100%;
+    /* background-color: darkorange; */
+}
+.rightbodywrap{
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(17, 200, 255); */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.nature{
+    width: 100%;
+    height: 90%;
+    /* background-color: orange; */
+    margin-left: 110px;
+    padding-top: 100px;
+}
+.one{
+    font-size: 48px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    
+}
+.text{
+    color: #707070;
+    font-family: 'Montserrat', sans-serif;
+font-weight: 300;
+font-size: 20px;
+margin-top: 30px;
+}
+.started1{
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 700;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    color: white;
+    background-color: #000;
+    cursor: pointer;
+    margin-top: 50px;
+}
+.started1:hover{
+    background-color: white;
+    color: black;
+   
+}
+.coothome{
+    margin-right: 120px;
+    width: 500px;
+}
+.wrap2{
+    width: 100%;
+    height: 90vh;
+    /* background-color: rgb(255, 4, 4); */
+    display: flex;
+}
+.leftwrap2{
+    width: 35%;
+    height: 100%;
+    /* background-color: aquamarine; */
+    display: flex;
+    align-items: flex-end;
+}
+.rightwrap2{
+    width: 65%;
+    height: 100%;
+    /* background-color: rgb(80, 12, 158); */
+    padding-right: 110px;
+    padding-top: 180px;
+    padding-left: 30px;
+
+}
+.wrap2photo{
+    margin-left: 110px;
+    width: 350px;
+    
+}
+.one1{
+    font-size: 43px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+.one2{
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+.one3{
+    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+.text1{
+    color: #707070;
+    font-family: 'Montserrat', sans-serif;
+font-weight: 400;
+font-size: 20px;
+margin-top: 20px;
+}
+.started2{
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 700;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    color: white;
+    background-color: #000;
+    cursor: pointer;
+    margin-top: 25px;
+}
+.started2:hover{
+    background-color: white;
+    color: black;
+   
+}
+.started4{
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 700;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    color: white;
+    background-color: #000;
+    cursor: pointer;
+    margin-top: 25px;
+}
+.started4:hover{
+    background-color: white;
+    color: black;
+   
+}
+.wrap3{
+    width: 100%;
+    height: 55vh;
+    /* background-color: rgb(255, 4, 4); */
+    display: flex;
+}
+.leftwrap3{
+    width: 60%;
+    height: 100%;
+    /* background-color: aqua; */
+    padding-left: 110px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+.leftwrap4{
+    width: 60%;
+    height: 100%;
+    /* background-color: aqua; */
+    padding-right: 110px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.rightwrap3{
+    width: 40%;
+    height: 100%;
+    /* background-color: darkblue; */
+    padding-right: 110px;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.rightwrap4{
+    width: 40%;
+    height: 100%;
+    /* background-color: darkblue; */
+    padding-left: 110px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.wrap3photo{
+    width: 342px;
+}
+.wrap4{
+    width: 100%;
+    height: 80vh;
+    /* background-color: coral; */
+    padding-top: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text2{
+    color: #707070;
+    font-family: 'Montserrat', sans-serif;
+font-weight: 400;
+font-size: 20px;
+margin-top: 25px;
+}
+.text2{
+    color: #707070;
+    font-family: 'Montserrat', sans-serif;
+font-weight: 400;
+font-size: 20px;
+margin-top: 25px;
+}
+.text3{
+    color: #707070;
+    font-family: 'Montserrat', sans-serif;
+font-weight: 400;
+font-size: 18px;
+margin-top: 25px;
+}
+.text4{
+    color: #707070;
+    font-family: 'Montserrat', sans-serif;
+font-weight: 500;
+font-size: 20px;
+color: #5E5C5C;
+}
+.wrap5{
+    width: 100%;
+    height: 80vh;
+    /* background-color: rgb(0, 255, 42); */
+    padding-left: 110px;
+    padding-right: 110px;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.qwe1{
+    width: 342px;
+    margin-left: 30px;
+}
+.qwe{
+    width: 342px;
+  
+}
+.wrap6{
+    width: 100%;
+    height: 50vh;
+    /* background-color: aquamarine; */
+    padding-left: 110px;
+    padding-right: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+}
+.boxwrap6{
+width: 342px;
+height: 300px;
+/* background-color: rgb(67, 173, 46); */
+padding-top: 10px;
+}
+.boxbox6{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.leftq{
+    width: 30px;
+    margin-left: 5px;
+}
+.wrap7{
+    width: 100%;
+    height: 90vh;
+    /* background-color: aquamarine; */
+    display: flex;
+}
+
+.leftwrap7{
+    width: 45%;
+    height: 100%;
+    /* background-color: darkred; */
+    padding-top: 200px;
+    padding-left: 110px;
+}
+.rightwrap7{
+    width: 55%;
+    height: 100%;
+    /* background-color: rgb(0, 255, 64); */
+    padding-right: 110px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: flex-end;
+}
+
+.wrap7boxxx{
+    width: 70%;
+    height: 100px;
+    display: flex;
+    align-items: flex-start;
+    /* background-color: beige; */
+}
+.explore{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+.card{
+    width: 540px;
+    height: 80px;
+    background: #FFFFFF;
+box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.15);
+
+display: flex;
+}
+.card4{
+    width: 540px;
+    height: 80px;
+    background: #FFFFFF;
+box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.15);
+margin-top: 30px;
+display: flex;
+}
+.cardleft{
+    width: 85%;
+    height: 100%;
+    padding-left: 28px;
+    display: flex;
+    align-items: center;
+
+}
+.cardright{
+    width: 15%;
+    height: 100%;
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.cardphoto1{
+    width: 50px;
+    margin-left: 30px;
+}
+.cardphoto2{
+    width: 44px;
+    margin-left: 32px;
+}
+.card2{
+    width: 540px;
+    height: 170px;
+    background: #FFFFFF;
+box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.15);
+margin-top: 30px;
+
+
+}
+.card2tex{
+    font-size: 16px;
+    color: #565656;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    margin-top: 30px;
+
+}
+.leftcard2{
+    width: 100%;
+    height: 50%;
+    /* background-color: aqua; */
+   display: flex;
+}
+.rightcard2{
+    width: 100%;
+    height: 50%;
+    /* background-color: rgb(255, 9, 255); */
+    padding-left: 28px;
+padding-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+.via{
+    font-size: 16px;
+    color: #565656;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    
+    
+}
+
+.wrap10{
+    width: 100%;
+    height: 80vh;
+    /* background-color: cadetblue; */
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.ilon{
+margin-top: 60px;
+}
+.hostel{
+    font-size: 20px;
+    color: #565656;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin-top: 30px;
+}
+.mask{
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.wrap10box{
+    width: 100%;
+    height: 50px;
+    padding-top: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+.colow{
+    width: 12px;
+height: 12px;
+border-radius: 50%;
+margin: 5px;
+background: #FB800F;
+cursor: pointer;
+}
+.colow:hover{
+    width: 18px;
+height: 18px;
+border-radius: 50%;
+margin: 5px;
+background: #FB800F;
+transform: 0.2s;
+cursor: pointer;
+
+}
+.wrap11{
+    width: 100%;
+    height: 50vh;
+    background-color: #001B62;
+    display: flex;
+}
+.leftwrap11{
+    width: 50%;
+    height: 100%;
+    /* background-color: aqua; */
+    padding-top: 80px;
+    padding-left: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.rightwrap11{
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(30, 194, 71); */
+    padding-top: 80px;
+    padding-left: 100px;
+
+  
+
+}
+.textwrap11{
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: white;
+    
+}
+.rast{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: white;
+    margin-top: 20px;
+}
+.boxwrap11{
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+}
+.logowrap11{
+    margin-left: 7px;
+}
+.boxwrap11r{
+    width: 400px;
+    height: 200px;
+    /* background-color: #FB800F; */
+    display: flex;
+    justify-content: space-between;
+}
+.textboxwt{
+    width: 33%;
+    /* background-color: coral; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.hjg{
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: white;
+}
+.single{
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: white;
+    margin-top: 15px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+<div class="head">
+<div class="logoname">
+<p class="coot">Cootles</p>
+</div>
+<div class="bodyname">
+<p class="bodyn">Rooms</p>
+<p class="bodyn">Reservation</p>
+<p class="bodyn">Contacts</p>
+</div>
+<div class="btnname">
+<button class="started">Get started</button>
+</div>
+</div>
+
+<div class="bodywrap">
+<div class="leftbodywrap">
+<div class="nature">
+<p class="one">Nature, Warmth, and <br>
+    Beautifyl in One Space</p>
+    <p class="text">Text je v lingvistice spojitý jazykový útvar, který se <br> 
+        uplatňuje v komunikaci jako komplexní jednotka <br> 
+        čuje uskupení slov, které dohromady tvoří nějakoe</p>
+        <button class="started1">Reservation</button>
+
+
+
+</div>
+</div>
+
+<div class="rightbodywrap">
+<img class="coothome" src="img/cotthome.png" alt="">
+</div>
+
+</div>
+
+    </div>
+
+<div class="wrap2">
+<div class="leftwrap2">
+<img class="wrap2photo" src="img/wrap2.png" alt="">
+</div>
+<div class="rightwrap2">
+    <p class="one1">Cozy and Down to Earth Cootage <br>
+        Hotel in Norway  </p>
+        <p class="text1">Our Cootage Hostel is an intimate hideway convised for dicering <br>
+            travels. It fasec directly the unique spectatulers pordoo dtospd <br>
+            the Hallerbos Jungle.</p>
+            <p class="text1">Our Cootage Hostel is an intimate hideway convised for dicering <br>
+                travels. It fasec directly the unique spectatulers</p>
+        <button class="started2">Learn More</button>
+
+</div>
+
+</div>
+
+<div class="wrap3">
+<div class="leftwrap3">
+    <p class="one1">Cabin Activities</p>
+    <p class="text1">Our Cootage Hostel is an intimate hideway convised for dicering <br>
+        travels. It fasec directly the unique spectatulers pordoo dtospd <br>
+        the Hallerbos Jungle.</p>
+
+</div>
+<div class="rightwrap3">
+<img class="wrap3photo" src="img/wrap3.png" alt="">
+</div>
+
+</div>
+
+
+
+
+<div class="wrap3">
+    <div class="rightwrap4">
+        <img class="wrap3photo" src="img/wrap4.png" alt="">
+        </div>
+    <div class="leftwrap4">
+        <p class="one1">100% Organic Food</p>
+        <p class="text2">We served 100% organic, low process and delicous food. We allow <br>
+            our guest to have breakfast or dinner request. Waht ever made your <br>
+            taste buds happy.</p>
+    
+    </div>
+    </div>
+
+<div class="wrap4">
+    <p class="one1"> Many Rooms to Choose </p>
+    <p class="text2">We served 100% organic, low process and delicous food. We allow <br>
+        our guest to have breakfast or dinner request. Waht ever made.</p>
+        <button class="started2">Explore more</button>
+
+</div>
+
+
+
+<div class="wrap5">
+<img class="qwe" src="img/wrap6.png" alt="">
+<img class="qwe1" src="img/wrap66.png" alt="">
+<img class="qwe1" src="img/wrap666.png" alt="">
+</div>
+
+
+<div class="wrap6">
+<div class="boxwrap6"> 
+    <p class="one2"> Single Room </p>
+    <p class="text3">Best for a brave lone wolf who need <br> comfortand quielt time, but you still <br> have achance to meet others.</p>
+   <div class="boxbox6">
+<p class="text4">Learn more</p>
+<img class="leftq" src="img/left.png" alt="">
+   </div>
+</div>
+
+<div class="boxwrap6"> 
+    <p class="one2"> Double room </p>
+    <p class="text3">Best for a brave lone wolf who need <br> comfortand quielt time, but you still <br> have achance to meet others.</p>
+   <div class="boxbox6">
+<p class="text4">Learn more</p>
+<img class="leftq" src="img/left.png" alt="">
+   </div>
+</div>
+
+
+<div class="boxwrap6"> 
+    <p class="one2"> Cootage </p>
+    <p class="text3">Best for a brave lone wolf who need <br> comfortand quielt time, but you still <br> have achance to meet others.</p>
+   <div class="boxbox6">
+<p class="text4">Learn more</p>
+<img class="leftq" src="img/left.png" alt="">
+   </div>
+</div>
+</div>
+
+
+
+<div class="wrap7">
+ <div class="leftwrap7">
+    <p class="one2"> How to Get My Room? </p>
+    <p class="text2">Best for a brave lone wolf who need <br> comfortand quielt time, but you still <br> have achance to meet others.</p>
+    <div class="wrap7boxxx">
+    <button class="started4">Contact us</button>
+    <p class="explore">Explore more room</p>
+
+    </div>
+ </div>
+<div class="rightwrap7">
+<div class="card">
+    <div class="cardleft">
+    <p class="one3"> 1.  Choose a room and date </p>
+    </div>
+    <div class="cardright">
+    <img class="cardphoto1" src="img/card1.png" alt="">
+    </div>
+
+</div>
+<div class="card2">
+<div class="leftcard2">
+    <div class="cardleft">
+        <p class="one3"> 2. Check for room availability </p>
+        </div>
+        <div class="cardright">
+        <img class="cardphoto2" src="img/card2.png" alt="">
+        </div>
+</div>   
+<div class="rightcard2">
+<p class="via">Contact us via phone or email, ask for availabilitz of ziu <br>
+    choice of room. We might offer zou somethink extinct.</p>
+</div>
+</div>
+
+<div class="card4">
+    <div class="cardleft">
+    <p class="one3"> 3. Enjou your room</p>
+    </div>
+    <div class="cardright">
+    <img class="cardphoto1" src="img/card1.png" alt="">
+    </div>
+
+</div>
+</div>
+</div>
+
+<div class="wrap10">
+    <p class="one1">Hear From Our Happy Custumers</p>
+    <img class="ilon" src="img/Ilon.png" alt="">
+    <p class="hostel">    Our Cootage Hostel is an intimate hideway or <br> diceringtravels. It fasec directly the unique <br> spectatulers pordoo  dtospd  the Hallerbos Jungle.</p>
+    <p class="mask">Ilon Mask</p>
+    <div class="wrap10box">
+    <div class="colow"></div>
+    <div class="colow"></div>
+    <div class="colow"></div>
+    <div class="colow"></div>
+
+    </div>
+</div>
+
+
+<div class="wrap11">
+    <div class="leftwrap11">
+   <p class="textwrap11">Cootels</p>
+   <p class="rast">Your rast Private <br>
+    Hideway From Crowed. <br>
+    Bak to Nature.</p>
+    <div class="boxwrap11">
+        <img class="logowrap1" src="img/twet.png" alt="">
+        <img class="logowrap11" src="img/insta.png" alt="">
+        <img class="logowrap11" src="img/fasbyk.png" alt="">
+
+
+    </div>
+    </div>
+<div class="rightwrap11">
+<div class="boxwrap11r">
+<div class="textboxwt">
+    <p class="hjg">Rooms</p>
+    <p class="single"> Single rooms</p>
+    <p class="single"> Double rooms</p>
+    <p class="single"> Cabin rooms</p>
+    <p class="single"> Cabin</p>
+
+</div>
+<div class="textboxwt">
+    <p class="hjg">Reservation</p>
+    <p class="single"> See the step</p>
+    <p class="single"> Beat thet</p>
+
+
+</div>
+<div class="textboxwt">
+    <p class="hjg">Contact</p>
+    <p class="single">Our Numer</p>
+    <p class="single">Our email</p>
+    <p class="single"> Our location</p>
+
+
+</div>
+
+</div>
+</div>
+
+</div>
+
+</body>
+</html>
