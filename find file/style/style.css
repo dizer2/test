@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+.wrap {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .wrap label {
+    cursor: pointer; }
+  .wrap #upload-photo {
+    opacity: 0;
+    position: absolute;
+    z-index: -1; }
+  .wrap .chekfile {
+    width: 300px;
+    height: 300px;
+    background-color: #333;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #fff;
+    font-family: monospace;
+    padding: 30px; }
+    .wrap .chekfile p {
+      text-align: center; }
+
+.loading__file {
+  width: 100%;
+  height: 100vh;
+  background-color: #333;
+  position: absolute;
+  bottom: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  font-size: 48px;
+  font-family: monospace; }
+  .loading__file #text__file {
+    margin-bottom: 2%; }
+  .loading__file #rerstar {
+    width: 170px;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #017371;
+    color: #fff;
+    border: none;
+    margin-top: 3%; }
+
+.loading__file__activation {
+  position: absolute;
+  bottom: 0%;
+  animation-name: move1;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1; }
+
+@keyframes move1 {
+  0% {
+    position: absolute;
+    bottom: 100%; }
+  100% {
+    position: absolute;
+    bottom: 0%; } }
+
+/*# sourceMappingURL=style.css.map */
